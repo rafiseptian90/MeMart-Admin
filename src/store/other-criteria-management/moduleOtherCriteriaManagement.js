@@ -1,6 +1,6 @@
 /*=========================================================================================
-  File Name: moduleTodo.js
-  Description: Todo Module
+  File Name: moduleUserManagement.js
+  Description: Calendar Module
   ----------------------------------------------------------------------------------------
   Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
   Author: Pixinvent
@@ -8,15 +8,17 @@
 ==========================================================================================*/
 
 
-import state from './moduleTodoState.js'
-import mutations from './moduleTodoMutations.js'
-import actions from './moduleTodoActions.js'
-import getters from './moduleTodoGetters.js'
+import state from './moduleOtherCriteriaManagementState.js'
+import mutations from './moduleOtherCriteriaManagementMutations.js'
+import actions from './moduleOtherCriteriaManagementActions.js'
+import getters from './moduleOtherCriteriaManagementGetters.js'
 
 export default {
+  isRegistered: false,
   namespaced: true,
   state,
   mutations,
   actions,
   getters
 }
+

@@ -35,6 +35,27 @@ export default [
     i18n: 'Classroom'
   },
   {
+    url: '/parent-incomes',
+    slug: 'parent-income',
+    name: 'Parent Income',
+    icon: 'DollarSignIcon',
+    i18n: 'ParentIncome'
+  },
+  {
+    url: '/parent-completnesses',
+    slug: 'parent-completnesses',
+    name: 'Parent Completnesses',
+    icon: 'UsersIcon',
+    i18n: 'ParentCompletnesses'
+  },
+  {
+    url: '/other-criterias',
+    slug: 'other-criterias',
+    name: 'Other Criteria',
+    icon: 'UsersIcon',
+    i18n: 'OtherCriteria'
+  },
+  {
     url: '/user-settings',
     slug: 'user-settings',
     name: 'User Settings',

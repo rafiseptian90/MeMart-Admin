@@ -76,6 +76,54 @@ const router = new Router({
           }
         },
         // =============================================================================
+        // Parent Income Routes
+        // =============================================================================
+        {
+          path: '/parent-incomes',
+          name: 'parent-income-index',
+          component: () => import('@/views/parent-income/Index.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'Parent Income Lists', active: true }
+            ],
+            pageTitle: 'Parent Incomes',
+            rule: 'editor'
+          }
+        },
+        // =============================================================================
+        // Parent Completness Routes
+        // =============================================================================
+        {
+          path: '/parent-completnesses',
+          name: 'parent-completness-index',
+          component: () => import('@/views/parent-completness/Index.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'Parent Completness Lists', active: true }
+            ],
+            pageTitle: 'Parent Completnesses',
+            rule: 'editor'
+          }
+        },
+        // =============================================================================
+        // Other Criteria Routes
+        // =============================================================================
+        {
+          path: '/other-criterias',
+          name: 'other-criteria-index',
+          component: () => import('@/views/other-criteria/Index.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'Other Criteria Lists', active: true }
+            ],
+            pageTitle: 'Other Criterias',
+            rule: 'editor'
+          }
+        },
+        // =============================================================================
         // User Setting Routes
         // =============================================================================
         {

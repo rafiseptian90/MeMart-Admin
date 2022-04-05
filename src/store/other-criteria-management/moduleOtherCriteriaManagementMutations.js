@@ -1,6 +1,6 @@
 /*=========================================================================================
-  File Name: moduleDataList.js
-  Description: Calendar Module
+  File Name: moduleCalendarMutations.js
+  Description: Calendar Module Mutations
   ----------------------------------------------------------------------------------------
   Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
   Author: Pixinvent
@@ -8,17 +8,12 @@
 ==========================================================================================*/
 
 
-import state from './moduleDataListState.js'
-import mutations from './moduleDataListMutations.js'
-import actions from './moduleDataListActions.js'
-import getters from './moduleDataListGetters.js'
-
 export default {
-  isRegistered: false,
-  namespaced: true,
-  state,
-  mutations,
-  actions,
-  getters
+  SET_OTHER_CRITERIAS (state, other_criterias) {
+    state.other_criterias = other_criterias
+  },
+  REMOVE_RECORD (state, otherCriteriaID) {
+    const otherCriteriaIndex = state.other_criterias.findIndex((u) => u.id === otherCriteriaID)
+    state.other_criterias.splice(otherCriteriaIndex, 1)
+  }
 }
-
