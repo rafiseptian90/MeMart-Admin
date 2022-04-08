@@ -19,17 +19,12 @@
         <!-- SM - OPEN SIDEBAR BUTTON -->
         <feather-icon class="sm:inline-flex xl:hidden cursor-pointer p-2" icon="MenuIcon" @click.stop="showSidebar" />
 
-        <bookmarks :navbarColor="navbarColor" v-if="windowWidth >= 992" />
+        <!-- BREADCRUMB -->
+        <vx-breadcrumb class="ml-4 md:block hidden" v-if="$route.meta.breadcrumb" :route="$route" :isRTL="$vs.rtl" />
 
         <vs-spacer />
 
-        <i18n />
-
-        <search-bar />
-
-        <cart-drop-down />
-
-        <notification-drop-down />
+        <i18n class="mr-6" />
 
         <profile-drop-down />
 

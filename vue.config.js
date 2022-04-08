@@ -20,7 +20,8 @@ module.exports = {
         chunks: 'all'
       }
     }
-  }
+  },
+  lintOnSave: false,
   // devServer: {
   //   overlay: {
   //     warnings: true,
